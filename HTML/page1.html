@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <style>
+        
+        * {
+           
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .center-container {
+            background-color:rgb(140, 149, 125);
+            height: 50vh;
+            width: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0;
+            border-radius: 1%;
+        }
+        .center-form {
+            text-align: center;
+            color: #333;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .registration-card {
+            background: transparen;
+            padding: 10rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(227, 219, 219, 0.1);
+            width: 100%;
+            max-width: 400px;
+            border: 1px;
+            
+        }
+        .submit {
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                }
+
+        .submit:hover {
+            background-color: #aa5e80;
+
+        
+    }
+    </style>
+</head>
+<body style="background-image:url('/HTML/nature.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;">
+    <div class="wrapper">
+    <div class="center-container">
+        <div class="form-container">
+            <form  action="page2.html" method="post" target="_blank" class="center-form" style="background-color: transparent; border:none; text-align:center">
+                <b><h1>Enquiry Form</h1></b>
+                <h4>We may call back to you</h4>
+                <label class="left-align-label">
+                <p>
+                    <label >First Name:</label><br>
+                    <input type="text" placeholder="Enter your First Name" required>
+                </p>
+                <p>
+                    <label>Last Name:</label><br>
+                    <input type="text" placeholder="Enter your last Name" minlength="0" maxlength="100" pattern="{4,8}" required>
+                </p>
+                <p>
+                    <label>Email:</label><br>
+                    <input type="email" placeholder="Enter your Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                </p>
+                
+                <p>
+                    <label>Select Course:</label><br>
+                <select name="course" id="Courses">
+                    <option>Select Course</option>
+                    <option>Python Fullstack</option>
+                    <option>Java Fullstack</option>
+                    <option>Data Science</option>
+                    <option>AI</option>
+                    <option>Machine Learning</option>
+                </select>
+                <p>
+                    <button class="submit" type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

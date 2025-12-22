@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+      body {
+        background-image: url("/CSS/html5.jpg");
+        background-position: center;
+      }
+    </style>
+</head>
+<body style="background-color:rgb(179, 206, 235)">
+    <!-- for comment line we have to use the short cut for (cntrl + K + C) -->
+    <!-- Every starting tag should be closed properly -->
+    <!-- The html has mainly 6 types of headings h1 to h6 , h1 is the highest heading and h6 is the lowest heading-->
+     <!-- The heading tags has default sizes  -->
+    <!-- The headings has the default size but you can a;lso specify the size of the any heading with the style attribute using css font-size property -->
+   <h1 style="font-size:40px;color:black;text-align:center">Welcome to the Codegnan It Solutions</h1>
+    <h2 style="font-size:32px;color:burlywood;text-align:center">Welcome to the Codegnan It Solutions</h2>
+    <h3 style="font-size:24px;color:darkgreen;text-align:justify">Welcome to the Codegnan It Solutions</h3>
+    <h4 style="font-size:20px;color:darkred">Welcome to the Codegnan It Solutions</h4>
+    <h5 style="font-size:16px;color:darkblue">Welcome to the Codegnan It Solutions</h5>
+    <h6 style="font-size:12px;color:darkorange">Welcome to the Codegnan It Solutions</h6>
+    <pre>
+        h1: ~32px (2em) - Most important heading. 1 em is equa to the current font size but the h1 default size is 2 times of font size
+        h2: ~24px (1.5em) - Second level.
+        h3: ~18.72px (1.17em) - Third level.
+        h4: ~16px (1em) - Fourth level, same as base text.
+        h5: ~13.28px (0.83em) - Fifth level.
+        h6: ~10.72px (0.67em) - Smallest heading. 
+      </pre>
+    <br>
+    <br>
+    <h3><b> The below mentioned tags are the marquee tags which are used to scroll the text</h3></p>
+    <!-- The marquee tag is used to scroll the text horizontally from right to left default -->
+     <!-- The marquee tag  has direction attribute to move the directions like top,down,left,right -->
+      <!-- If the tag was shown in red color means it was depricated-->
+    <i><marquee >The codegnan It solutions provides different types of courses</marquee></i><br><br><!--default direction is left-->
+    <marquee direction="left" style="color:rgb(61, 16, 100) background-color:black"><h1>The codegnan It solutions provides different types of courses</h1></marquee><br><br>
+    <marquee direction="right" style="color:sienna">The codegnan It solutions provides different types of courses</marquee><br><br>
+    <marquee direction="up" style="color:rgb(50, 63, 64);text-align:center"><h1>The codegnan It solutions provides different types of courses</h1></marquee><br><br><br>
+    <marquee direction="down"style="color:darkblue">The codegnan It solutions provides different types of courses</marquee><br><br>
+    <h1>The html has the attributes </h1>
+    <p style="font-size:40px;color:color-mix(in srgb-linear, color percentage, color percentage)">The attributes give the additional information related to element tag</p>
+    <p>The attributes are mentioned the open element tag</p>
+    <h1>hyperlink</h1>
+    <p>The <a> tag defines a hyperlink , The href attribute specifies the url of the page the link goes to.</p>
+    <a href="https://codegnan.com/">Wecome to the codegnan IT solutions</a> <hr><br><br>
+    <p> The <img> element has the src attribute is used to specify the url or apth or address of thr image.</p>
+    <p>There are two ways to specify the url in the src attribute </p>
+    <li>Absolute path</li>
+    <p>links to be external image that is hosted on another website or server</p>
+    <li>Relative path</li>
+    <p>links to be internal image that is hosted on the same website or server</p>
+    <p> It is almost always best to use relative URLs. They will not break if you change domain.</p>
+
+    <img src="html image.jpg" alt="html image" title="html image" width="1000px" height="600px"><hr><br><br>
+    <img src="html2.jpg" alt="other html image" title="html2 image" width="1000px"height="600px">
+    <p style="color:blueviolet"> Here the image tag has the attribute like <mark>src, alt, title, width, height</mark>to add the additrional features to the imag tag like the alt attribute add the additional information to the image tag if the not is not loaded that time the alternative text will be displaed and the title adds the title to the image tag when you put the cursor on the iomage it wil displaed the titled text and width and height are displaying the size of the image .</p>
+    <p style="color:red;font-family:'arial'">The html has the attribute like <mark>style</mark> is used to add the style to an element , such as color,font,size and more</p>
+    <br>
+    <br>
+    <hr>
+    <p>Html has formatting elements were displaying the special types of texts</p>
+    <p><b>The sun <del>reise</del> rises in the east and <i>The sun sets in the west </i>and the <em>earth</em> revolves around the <mark>sun</mark> and the <mark>earth</mark>has huge <small>amount</small> of water(h<sub>2</sub>0)</b>The sun is 2<sup>1000000</sup> times bigger than earth </p>
+    <br>
+    <br>
+    <table border="1px" cellpadding="10" style="border-collapse:collapse">
+      <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>age</th>
+        <th>gender</th>
+        <th>batch</th>
+      </tr>
+      <tr>
+        <td>srinu</td>
+        <td>majji</td>
+        <td>23</td>
+        <td>male</td>
+        <td>023</td>
+      </tr>
+      <tr>
+        <td>vijay</td>
+        <td>kumar</td>
+        <td>24</td>
+        <td>male</td>
+        <td>023</td>
+      </tr>
+    </table>
+    <img src="./html2.jpg"><!-- ./ it is used to call the file from the same html folder -->
+    <img src="/CSS/html image.jpg">
+    <!-- ../is used to call thefile from  outside of the html folder of another folder-->
+    <!-- for videos we are using the video element  -->
+     <!-- for controls attribute control the video and loop attribute continues the videos contionously -->
+      <video controls loop width="1000" height="1000">
+        <source src="video.mp4">
+      </video>
+      <iframe width="1013" height="570" src="https://www.youtube.com/embed/8UFPZPM2_PA" title="💢Cricketer SIRAJ JOHARAFA restaurant lo taste ela vundhi ⁉️ valacha vodha? #food #hyderabad #shorts " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width></iframe>
+      
+    <ul type="square">
+    <ol type="A">
+      <li>srinu</li>
+      <li>vijay</li>
+      <li>manisha</li>
+      <li>rakesh</li>
+    </ol>
+    </ul>
+    <br>
+    <br>
+    <hr>
+    <!-- Html links or hyper links -->
+     <!-- The <a> tag defines a hyperlink and its having the attribute href it results the destination and its also hs the attribute target it results the target window or tab -->
+      
+      <a href="https://www.placements.codegnan.com/login"target="_self">codegnan Job portal</a>
+      <p>_self - Default. Opens the document in the same window/tab as it was clicked<br>
+
+        <a href="https://www.placements.codegnan.com/login"target="_blank">codegnan Job portal</a>
+      _blank - Opens the document in a new window or tab<br>
+            
+        <a href="https://www.placements.codegnan.com/login"target="_parent">codegnan Job portal</a>
+      _parent - Opens the document in the parent frame<br>
+            
+        <a href="https://www.placements.codegnan.com/login"target="_top">codegnan Job portal</a>
+      _top - Opens the document in the full body of the window<br>
+            
+      <h4>To use an image as a link, just put the <img> tag inside the <a> tag:</h4>
+        <a href="https://www.w3schools.com/html/html_images.asp" target="_blank"><img src="/CSS/html3.jpg" alt="html image" title="html image" width="1000px" height="600px"></a>
+      </p>
+    </body>
+</html

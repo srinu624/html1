@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+           
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        
+        button {
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                }
+
+        button:hover {
+            background-color: #aa5e80;
+
+        
+    }
+    body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+    .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    .registration-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            
+        }
+        .center-form {
+            text-align: center;
+            color: #333;
+        }
+        .left-align-label {
+            float: left;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .row{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 1px;
+        }
+        
+
+    </style>
+</head>
+<body style="background-image: url('/CSS/html\ 4.jpg');">
+
+    <div class="wrapper">
+        <div class="registration-card">
+            <div class="center-container">
+            <div class="center-form">
+
+    <form action="https://www.placements.codegnan.com/" method="post" target="_blank" class="center-form" style="background-color: transparent; border:none;">
+         <h2 style="text-align:center">Welcome to Codegnan IT Solutions</h2>
+         <h4>Register to Join</h4>
+        
+         <label class="left-align-label">
+        <p>
+        <div class="row">
+        <label >First Name:</label>
+        <input type="text" placeholder="Enter your First Name" required>
+        </div>
+        </p>
+        <p>
+            <div class="row">
+            <label>Last Name:</label>
+            <input type="text" placeholder="Enter your last Name" minlength="0" maxlength="100" pattern="[A-Z][a-z]{4,8}" required>
+            </div>
+        </p>
+        <p>
+            <div class="row">
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+            </div>
+        </p>
+        <p>
+            <div class="row">
+            <label style="text-align:left">Password:</label>
+            <input type="password" placeholder="Enter your Password" minlength="9" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+={}\[\]:;\<,>.?\/\\|])(?=.{9,}).*"required>
+            </div>
+            </p>
+        <p>
+            <div class="row">
+            <label>Mobile:</label>
+            <input type="tel" placeholder="Enter your Mobile Number" minlength="10" maxlength="10" pattern="\d{10}"required>
+            </div>
+        </p>
+        <p>
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+        
+        </p>
+        <p>
+        <div class="row">
+        <button type="submit">Submit</button>
+        </div>
+        </p>    
+        </label>
+    </form>
+    </div>
+    </div>
+    
+
+    
+</body>
+</html>
